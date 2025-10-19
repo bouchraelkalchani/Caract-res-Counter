@@ -1,0 +1,208 @@
+
+:root {
+  --background-color: white;
+  --text-color: black;
+  --btn-bg: #f0f0f0;
+  --btn-text: #000;
+}
+
+/* Quand body a la classe .dark, on écrase les variables */
+body.dark {
+  --background-color: #121212;
+  --text-color: white;
+  --btn-bg: #333;
+  --btn-text: white;
+}
+
+/* Quand body a la classe .light (optionnel ici car c’est par défaut) */
+body.light {
+  --background-color: white;
+  --text-color: black;
+  --btn-bg: #f0f0f0;
+  --btn-text: #000;
+}
+
+#title{
+    font-family: system-ui;
+    font-weight: bold;
+}
+#container_up{
+    display: flex;
+    justify-content: space-between;
+    padding-inline:90px;
+}
+#titleH1{
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 15px;
+    color: inherit;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+  
+ 
+}
+
+#btn_mode {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  transition: background-color 0.3s, color 0.3s;
+}
+/* rgb(66, 64, 64) */
+body > textarea{
+    background-color: inherit;
+    width: 90%;
+    height: 200px;
+    display: block;
+    margin:0  auto;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+;
+    padding-left: 15px;
+    padding-top: 20px;
+
+}
+body > #inp-time{
+    background-color: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 90px;
+
+}
+#inputs{
+    padding-left: 90px;
+}
+#big_div{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-inline:90px ;
+}
+#charachter{
+    flex: 1;
+    height: 100px;
+    background-color: rgb(194, 147, 194);
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgb(0,0 , 0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+#word{
+    flex: 1;
+    height: 100px;
+    background-color: #FFA500;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgb(0,0 , 0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    
+}
+#sentence{
+    flex: 1;
+    height: 100px;
+    background-color: #FF6B4A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgb(0,0 , 0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.counterH1{
+    font-size: 3em;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.para,h1 {
+    margin: 0; /* supprime toutes les marges par défaut */
+    padding-left: 10px; /* espace interne */
+    padding-top: 5px;
+    color: var(--text-color);
+
+}
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+}
+#letter{
+    margin-left:90px ;
+    font-weight: bold;
+}
+#spansee{
+    margin-left:90px ;
+}
+#divlettbig {
+  display: flex;
+  flex-direction: column; /* Aligne chaque .row verticalement */
+  gap: 15px;               /* Espace entre les lignes */
+  padding: 20px 90px;
+  background-color: var(--background-color);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.letterP {
+  font-size: 20px;
+  font-weight: bolder;
+  color: gray;
+  margin-left: 0;
+  width: 30px;
+}
+
+.divlett {
+  flex: 1;
+  background-color: rgb(66, 64, 64);
+  border-radius: 15px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.pourcent {
+  height: 100%;
+  background-color: rgb(194, 147, 194);
+  border-radius: 15px;
+}
+
+.statistique {
+  min-width: 80px;
+  font-size: 14px;
+}
+
+.big{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+
+}
+
+
+
+
+

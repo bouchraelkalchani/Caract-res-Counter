@@ -1,0 +1,55 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="charachter.css">
+    <title>Carachter_counter</title>
+</head>
+<body class="light">
+  <div id="container_up">
+    <span id="title">Character Counter</span>
+    <button id="btn_mode">🌙</button>
+  </div>
+  <h1 id="titleH1">Analyze your text in real-time.</h1>
+  <textarea name="" id="textarea" placeholder="Start typing here...(or paste your text)"></textarea>
+  
+  <div id="inp-time">
+    <div id="inputs">
+
+    <input type="checkbox" name="" id="check">
+    <label for="a">Exclude Spaces</label>
+    <input type="checkbox"  name="" id="a">
+    <label for="b">Set Character Limit</label>
+    <input type="number" id="charlimit" style="display: none;" placeholder="Limite" min="1">
+  </div>
+  <span>Approx reading time: 0 minute</span>
+  </div>
+  <div id="big_div">
+    <div id="charachter">
+        <h1 class="counterH1 total">00</h1>
+        <p class="para">Total Characters</p>
+    </div>
+    <div id="word">
+        <h1 class="counterH1 word">00</h1>
+        <p class="para">Word Count</p>
+    </div>
+    <div id="sentence">
+        <h1 class="counterH1 sentence">00</h1>
+        <p class="para" >Sentence Count</p>
+    </div>
+  </div>
+  <p id="letter">Letter Density</p>
+  <span id="spansee">No characters found.Start typing to see letter density. </span>
+  
+  <div class="big">
+    <div class="divlettbig" style="display: none;" id="divlettbig"></div>
+  </div>
+  <button id="see" style="display: none;">See more</button>
+
+  <script src="charachter.js"></script>
+
+</body>
+</html>
